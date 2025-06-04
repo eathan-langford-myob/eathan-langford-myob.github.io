@@ -642,7 +642,7 @@ a:hover {
   background: transparent;
   color: rgb(var(--main));
   border: 1px solid rgb(var(--main));
-  padding: 3px 10px;
+  /* padding: 3px 10px; */
   transition: all 0.1s ease;
 }
 
@@ -663,9 +663,26 @@ a:hover {
 .info {
   width: 60%;
   float: right;
-  padding-top: 8vh;
-  padding-right: 8vh;
+  padding-top: 10%;
+  padding-right: 10%;
 }
+
+.search-buttons-img {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  padding: 0;
+  object-fit: contain;
+}
+
+.search-buttons-img img {
+  max-height: 100%;
+  margin: 0 auto;
+  object-fit: contain; /* Ensures the image scales proportionally */
+  /* object-position: center; Centers the image within the box */
+}
+
+
 
 .info-table {
   margin-top: 100px;
@@ -693,7 +710,7 @@ a:hover {
 
 .info-table li.span-2,
 .info-table .vboy-wrap {
-  width: 100%;
+  width: 190px;
   text-align: left;
 }
 
@@ -819,7 +836,7 @@ a:hover {
 
 .cursor {
   position: fixed;
-  z-index: 2; 
+  z-index: 2;
   pointer-events: none;
 }
 
@@ -872,6 +889,14 @@ a:hover {
 
 .pip-head .fade-b {
   padding: 0 10px;
+}
+
+.search-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 15%;
+  width: 75%;
 }
 
 @keyframes fade-swap {

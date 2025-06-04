@@ -42,22 +42,35 @@
               <div class="pip-body">
                 <ul class="options">
                   <a href="https://github.com/settings/organizations">GH Orgs</a>
-                  <a href="https://myobconfluence.atlassian.net/wiki/search?text="> Search Confluence</a>
+                  <a href="https://myobhelpme.zendesk.com/agent/filters">Zendesk</a>
+                  <a href="https://myobconfluence.atlassian.net/wiki/spaces/DE/overview">Confluence</a>
                   <a href="https://github.com/myob-ops/hello/blob/main/src/run/router/index.md">Hello Docs</a>
                   <a href="https://arlive.atlassian.net/secure/RapidBoard.jspa?rapidView=2475">Board</a>
-                  <a
-                    href="https://adfs.myob.com.au/adfs/ls/IdpInitiatedSignOn.aspx?client-request-id=1f179421-c6a8-4c84-ec0c-0080000000f4">ADFS</a>
-                  <a href="https://myapps.microsoft.com/">MYOB Apps</a>
+                  <a href="https://myob-technology.awsapps.com/start/#/">AWS Portal</a>
+                  <a href="https://myapps.microsoft.com/">MyApps</a>
+                  <a href="https://chatgpt.com/">ChatGPT</a>
+
                 </ul>
                 <div class="info">
                   <div class="right-options">
                   </div>
                   <div class="info">
                     <!-- <input type="text" autofocus></input> -->
-                    <form action="https://www.google.com/search" method="get">
-                      <input type="text" name="q" autofocus>
-                      <input type="submit" value="go" autofocus/>
-                  </form>
+                    <form action="https://www.google.com/search" method="get" onsubmit="return handleFormSubmit(event);">
+                      <input type="text" name="q" id="search-input">
+                      <div class="search-buttons">
+                        <button type="button" class="search-buttons-img" onclick="search('google')" style="border: none; background: none;">
+                          <img src="./images/google.webp" alt="Google">
+                        </button>
+                        <button type="button" class="search-buttons-img" onclick="search('glean')" style="border: none; background: none;">
+                          <img src="./images/glean.png" alt="Glean">
+                        </button>
+                        <button type="button" class="search-buttons-img" onclick="search('confluence')" style="border: none; background: none;">
+                          <img src="./images/confluence.png" alt="Confluence">
+                        </button>
+
+                      </div>
+                    </form>
                     <div class="info-body">
                       <ul class="info-table">
                         <li class="vboy-wrap">
@@ -78,17 +91,17 @@
               </header>
               <div class="pip-body">
                 <ul class="options">
+                  <a href="https://github.com/MYOB-Technology">MYOB-Technology</a>
+                  <a href="https://github.com/myob-ops">myob-ops</a>
+                  <a href="https://github.com/myob-fma">myob-fma</a>
                   <a href="https://github.com/myob-advanced">myob-advanced</a>
                   <a href="https://github.com/myob-api">myob-api</a>
-                  <a href="https://github.com/myob-fma">myob-fma</a>
                   <a href="https://github.com/myob-fs">myob-fs</a>
-                  <a href="https://github.com/myob-ops">myob-ops</a>
                   <a href="https://github.com/myob-oss">myob-oss</a>
                   <a href="https://github.com/myob-sme">myob-sme</a>
-                  <a href="https://github.com/MYOB-Technology">MYOB-Technology</a>
                   <a href="https://github.com/myob-tw">myob-tw</a>
-                  <a href="https://github.com/panic-testing"> panic - testing</a>
-                  <a href="https://github.com/sentinel-testing"> sentinel - testing</a>
+                  <a href="https://github.com/panic-testing"> panic</a>
+                  <a href="https://github.com/sentinel-testing"> sentinel</a>
                 </ul>
                 <div class="info">
                   <div class="right-options">
@@ -114,13 +127,11 @@
               </header>
               <div class="pip-body">
                 <ul class="options">
-                  <a href="https://myobconfluence.atlassian.net/wiki/spaces/IS/pages/518979941/Who+deals+with+it">Who
-                    deals with it?</a>
-                  <a href="https://myobconfluence.atlassian.net/wiki/search?text=">Search Confluence</a>
+                  <a href="https://myobconfluence.atlassian.net/wiki/spaces/DELPLAT/overview">Nebula docs</a>
+                  <a href="https://myobconfluence.atlassian.net/wiki/spaces/DE/overview">Confluence</a>
                   <a href=" https://myobo365.sharepoint.com/sites/dontpanic">Sharepoint</a>
-                  <a href="https://github.com/myob-ops/hello/blob/main/src/run/router/index.md"> Router Runbooks</a>
+                  <a href="https://myobconfluence.atlassian.net/wiki/spaces/DE/pages/9094333429/Runbooks"> Runbooks</a>
                   <a href="https://arlive.atlassian.net/secure/RapidBoard.jspa?rapidView=2475"> Board</a>
-                  <a href="https://myobconfluence.atlassian.net/wiki/spaces/DE/overview">Devex Confluence</a>
                 </ul>
                 <div class="info">
                   <div class="right-options">
@@ -176,12 +187,8 @@
               </header>
               <div class="pip-body">
                 <ul class="options">
-                  <a href="https://myobportal.cloud.com/Citrix/StoreWeb/#/login">Citrix</a>
-                  <a
-                    href="https://adfs.myob.com.au/adfs/ls/IdpInitiatedSignOn.aspx?client-request-id=1f179421-c6a8-4c84-ec0c-0080000000f4">ADFS</a>
-                  <a
-                    href="https://myob.halp.com/tickets?queues=61a4713a291f890d7636132f,60ecbd04adc4860ffe1374e1&sort-by=createdAt&sort-direction=asc&statuses=612fe965f1f591428ff09320,612fe965f1f591428ff09323,61a4713b291f89f616361451,61a4713b291f8934d2361452,61a4806af8176cc1b78aa582,616e144f4e81d9db9f40ac18">MYOB</a>
                   <a href="https://myapps.microsoft.com/"> My Apps</a>
+                  <a href="https://myobhelpme.zendesk.com/agent/filters">Zendesk</a>
                   <a href="https://buildkite.com/myob"> Buildkite</a>
                   <a href="https://myob.com/aws"> AWS</a>
                   <a href="https://my.1password.com/signin?l=en"> 1Pass</a>
@@ -308,6 +315,28 @@
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
   <script src="./script.js"></script>
+  <script>
+    function search(destination) {
+      const query = document.getElementById('search-input').value;
+      if (destination === 'glean') {
+        url = `https://app.glean.com/search?q=${encodeURIComponent(query)}&tab=all`;
+      }
+      if (destination === 'confluence') {
+        url = `https://myobconfluence.atlassian.net/wiki/search?text=${encodeURIComponent(query)}`;
+      }
+      window.open(url, '_blank');
+    }
+
+    function handleFormSubmit(event) {
+      const query = document.getElementById('search-input').value.trim();
+      if (!query) {
+        alert('Please enter a search term.');
+        event.preventDefault();
+        return false;
+      }
+      return true;
+    }
+  </script>
 
 </body>
 
